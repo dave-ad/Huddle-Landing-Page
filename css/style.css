@@ -1,0 +1,148 @@
+:root {
+  --White: rgb(255, 255, 255);
+  --Pink: rgb(255, 82, 191);
+  --Very-Pale-Cyan: rgb(235, 251, 255);
+  --Very-Dark-Cyan: rgb(0, 37, 46);
+  --Grayish-Blue: rgb(128, 141, 153);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+
+/* HEADER */
+header {
+  background-color: var(--Very-Pale-Cyan);
+  background-image: url(../images/bg-hero-mobile.svg);
+  background-repeat: no-repeat;
+  height: 800px;
+  border: 1px solid red;
+}
+
+/* LOGO & BUTTON AREA */
+.top {
+  margin-top: 5px;
+}
+
+.top > img {
+  width: 40%;
+  padding: 20px;
+}
+
+/* TRY FOR FREE BUTTON */
+.topbtn {
+  position: absolute;
+  right: 30px;
+  /* font-size: 16px; */
+  width: 130px;
+  height: 30px;
+  padding: 5px;
+  margin-top: 15px;
+  border: none;
+  background: var(--White);
+  transition: all 0.1s linear;
+  box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+}
+
+.topbtn:active {
+  transform: scale(0.95);
+}
+
+/* .topbtn span {
+  color: #464646;
+} */
+
+.topbtn .border {
+  position: absolute;
+  border: 0.15em solid var(--White);
+  transition: all 0.3s 0.08s linear;
+  top: 50%;
+  left: 50%;
+  width: 130px;
+  height: 30px;
+  transform: translate(-50%, -50%);
+}
+
+.topbtn:hover .border {
+  display: block;
+  width: 145px;
+  height: 45px;
+}
+
+.full-rounded {
+  border-radius: 2em;
+}
+
+/* HERO TEXT */
+.hero {
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  border: 1px solid green;
+}
+
+.hero > h1 {
+  font-size: 150%;
+  margin-bottom: 20px;
+}
+
+/* GET STARTED BUTTON */
+.btn {
+  position: relative;
+  left: 18%;
+  /* font-size: 16px; */
+  width: 64%;
+  height: 40px;
+  /* padding: 5px; */
+  margin-top: 25px;
+  border: none;
+  border-radius: 50px;
+  color: var(--White);
+  background: var(--Pink);
+  transition: all 0.1s linear;
+  box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn span {
+  font-size: 12px;
+  letter-spacing: 1px;
+  transition: top 0.5s;
+}
+
+.btn-text-one {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btn-text-two {
+  position: absolute;
+  width: 100%;
+  top: 150%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btn:hover .btn-text-one {
+  top: -100%;
+}
+
+.btn:hover .btn-text-two {
+  top: 50%;
+}
