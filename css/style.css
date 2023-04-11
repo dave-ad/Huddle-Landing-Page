@@ -43,10 +43,10 @@ header {
 /* TRY FOR FREE BUTTON */
 .topbtn {
   position: absolute;
-  right: 30px;
-  /* font-size: 16px; */
-  width: 130px;
-  height: 30px;
+  right: 20px;
+  width: 100px;
+  height: 25px;
+  font-size: 70%;
   padding: 5px;
   margin-top: 15px;
   border: none;
@@ -69,15 +69,15 @@ header {
   transition: all 0.3s 0.08s linear;
   top: 50%;
   left: 50%;
-  width: 130px;
-  height: 30px;
+  width: 100px;
+  height: 25px;
   transform: translate(-50%, -50%);
 }
 
 .topbtn:hover .border {
   display: block;
-  width: 145px;
-  height: 45px;
+  width: 115px;
+  height: 35px;
 }
 
 .full-rounded {
@@ -89,7 +89,6 @@ header {
   text-align: center;
   padding: 20px;
   margin-top: 50px;
-  border: 1px solid green;
 }
 
 .hero > h1 {
@@ -104,14 +103,14 @@ header {
   /* font-size: 16px; */
   width: 64%;
   height: 40px;
-  /* padding: 5px; */
-  margin-top: 25px;
+  padding: 24px;
+  margin-top: 15px;
   border: none;
   border-radius: 50px;
   color: var(--White);
   background: var(--Pink);
   transition: all 0.1s linear;
-  box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0.1em 1em var(--Pink); */
   overflow: hidden;
   outline: none;
   cursor: pointer;
@@ -145,4 +144,12 @@ header {
 
 .btn:hover .btn-text-two {
   top: 50%;
+  border: 1px solid green;  
+}
+
+.mockup {
+    position: relative;
+    left: 10%;
+    width: 80%;
+    margin-top: 43px;
 }
