@@ -215,6 +215,11 @@ footer {
   width: 100%;
 }
 
+.footrow > div:nth-child(2) {
+  text-decoration: none;
+  color: var(--White);
+}
+
 .footrow > i {
   font-size: 20px;
   margin-right: 20px;
